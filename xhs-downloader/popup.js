@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 });
 
 
-// 2. Extracts video Url from HTML by executing 'parseHTML.js'.
+// 2. Extracts videoUrl from HTML by executing 'parseHTML.js'.
 function extractVideo() {
 	chrome.scripting.executeScript({
 		target: { tabId: tab.id },
