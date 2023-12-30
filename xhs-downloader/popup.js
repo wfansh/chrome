@@ -23,7 +23,7 @@ function extractVideo() {
 	}, function () { });
 }
 
-// 3. Receives Chrome runtime message and downloads the video.
+// 3. Receives runtime message (including videoUrl) and downloads the video.
 chrome.runtime.onMessage.addListener(function (request, sender) {
 	if (request.method === 'getVideoUrl') {
 		alert('Video Url = ' + request.url);
